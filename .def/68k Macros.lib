@@ -1,0 +1,42 @@
+; ==================================================
+; 68k Macros.lib
+; Defines macros used by the 68k.
+; ***DO NOT MODIFY***
+;
+; Author: Kilo
+; 31-10-2024
+; ==================================================
+
+; ----------<Z80>----------
+Z80_Start	macros
+		move.w	#0,(z80_busline).l
+
+Z80_Stop	macros
+		move.w	#$100,(z80_busline).l
+
+Z80_Pause	macro
+		Z80_Stop
+
+@Z80Wait:
+		btst	#0,(z80_busline).l
+		bne.s	@Z80Wait
+	endm
+
+Z80_ResetStart	macros
+		move.w	#0,(z80_resetln).l
+
+Z80_ResetStop	macros
+		move.w	#$100,(z80_resetln).l
+
+; ----------<Video>----------
+VDP_Cmd	macro	cmd,addr,ctrl
+	if narg>=3
+		move.l	#((\addr&$3FFF)<<16)|((\addr&$C000)>>14)|\cmd,\ctrl
+	else
+		move.l	#((\addr&$3FFF)<<16)|((\addr&$C000)>>14)|\cmd,(vdp_ctrl).l
+	endif
+	endm
+
+; ==================================================
+; End of file
+; ==================================================

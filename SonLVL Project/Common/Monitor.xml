@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjDef xmlns="http://www.sonicretro.org" Name="Monitor" Image="img" RememberState="true">
+  <Images>
+    <ImageFromMappings id="img">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="0" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="5Ring">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="0" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="10Ring">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="1" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="RandRing">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="2" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="Shield">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="3" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="Magnet">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="4" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="Shoes">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="5" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="Invinc">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="6" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="Bomb">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="7" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="Time">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="8" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="Life">
+      <ArtFile filename="../Action Stage/Global/Actors/Item Box/Tiles.nem" />
+      <MapFile type="ASM" filename="../Action Stage/Global/Actors/Item Box/Mappings.asm" frame="9" startpal="0" />
+    </ImageFromMappings>
+  </Images>
+  <Subtypes>
+    <Subtype id="00" name="5 Rings" image="5Ring" />
+    <Subtype id="01" name="10 Rings" image="10Ring" />
+    <Subtype id="02" name="Random Rings" image="RandRing" />
+    <Subtype id="03" name="Normal Shield" image="Shield" />
+    <Subtype id="04" name="Electric Shield" image="Magnet" />
+    <Subtype id="05" name="Speed Shoes" image="Shoes" />
+    <Subtype id="06" name="Invincibility" image="Invinc" />
+    <Subtype id="07" name="Enemy Nuke" image="Bomb" />
+    <Subtype id="08" name="Extra Time (Gamma)" image="Time" />
+    <Subtype id="09" name="1-Up" image="Life" />
+  </Subtypes>
+  <Properties>
+    <BitsProperty name="Contents" type="MonitorType" startbit="0" length="4" />
+  </Properties>
+  <Enums>
+    <Enum name="MonitorType">
+      <EnumMember name="5 Rings" />
+      <EnumMember name="10 Rings" />
+      <EnumMember name="Random Rings" />
+      <EnumMember name="Normal Shield" />
+      <EnumMember name="Electric Shield" />
+      <EnumMember name="Speed Shoes" />
+      <EnumMember name="Invincibility" />
+      <EnumMember name="S" />
+      <EnumMember name="Goggles" />
+      <EnumMember name="Broken" />
+    </Enum>
+  </Enums>
+</ObjDef>

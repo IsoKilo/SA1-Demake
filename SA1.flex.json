@@ -1,0 +1,151 @@
+{
+    "Flex": 2,
+    "name": "",
+    "node": "ebb6ff68-0ae6-4953-890f-e9aac6e99a3c",
+    "objects": [
+        {
+            "format": "Sonic 1.js",
+            "name": "Debug Font",
+            "palettes": [],
+            "art": {
+                "path": "System\\Debug Font.unc",
+                "compression": "Uncompressed",
+                "offset": 0
+            },
+            "mappings": {
+                "path": "",
+                "label": ""
+            },
+            "dplcs": {
+                "enabled": false,
+                "path": "",
+                "label": ""
+            },
+            "uuid": "ebb6ff68-0ae6-4953-890f-e9aac6e99a3c"
+        },
+        {
+            "name": "Title Screen",
+            "children": [
+                {
+                    "format": "Sonic 1.js",
+                    "name": "Sprites (Normal)",
+                    "palettes": [
+                        {
+                            "path": "Title Screen\\Normal.pal",
+                            "length": 4
+                        }
+                    ],
+                    "art": {
+                        "path": "Title Screen\\Tiles.nem",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Title Screen\\Sprite Maps.asm",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "3541c2d4-1487-41d2-b85f-b3ae11e1ad0a"
+                },
+                {
+                    "format": "Sonic 1.js",
+                    "name": "Sprites (Lightened)",
+                    "palettes": [
+                        {
+                            "path": "Title Screen\\Light.pal",
+                            "length": 4
+                        }
+                    ],
+                    "art": {
+                        "path": "Title Screen\\Tiles.nem",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Title Screen\\Sprite Maps.asm",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "df43fa98-8f36-4ccc-8fe3-5c8e6104fcfb"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": true,
+            "uuid": "92ae2824-dfaa-445c-b3bf-d7db8edbf852"
+        },
+        {
+            "name": "Action Stage",
+            "children": [
+                {
+                    "format": "Sonic 1.js",
+                    "name": "Item Box",
+                    "palettes": [
+                        {
+                            "path": "Action Stage\\Global\\Main.pal",
+                            "length": 2
+                        }
+                    ],
+                    "art": {
+                        "path": "Action Stage\\Global\\Actors\\Item Box\\Tiles.nem",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Action Stage\\Global\\Actors\\Item Box\\Mappings.asm",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "7c3a0ec2-c83a-4d79-b777-85a4f9df1442"
+                },
+                {
+                    "name": "Players",
+                    "children": [
+                        {
+                            "format": "Sonic 1.js",
+                            "name": "Sonic",
+                            "palettes": [
+                                {
+                                    "path": "Action Stage\\Global\\Main.pal",
+                                    "length": 2
+                                }
+                            ],
+                            "art": {
+                                "path": "Action Stage\\Global\\Actors\\Players\\Sonic Tiles.unc",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Action Stage\\Global\\Actors\\Players\\Sonic Maps.asm",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "Action Stage\\Global\\Actors\\Players\\Sonic DPLCs.asm",
+                                "label": ""
+                            },
+                            "uuid": "8b511c89-f5d7-4897-a2ee-2de01a12898b"
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": false,
+                    "uuid": "05bd9385-74e6-4805-91c2-15f125db8d54"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": true,
+            "uuid": "ee8b511c-89f5-4748-97e2-ee2de01a1289"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+*.gen
+*.lst
+*.sym
+
+*.log
+SonLVL INI Files/dllcache

@@ -1,0 +1,45 @@
+; ==================================================
+; Game Consts.lib
+; Defines constants used by the game.
+;
+; Author: Kilo
+; 11-10-2024
+; ==================================================
+
+; ----------<Scenes>----------
+	rsreset
+SCNID_TITLE			rs.l 1
+SCNID_GAME			rs.l 1
+
+; ----------<Player IDs>----------
+	rsreset
+PLYID_SONIC			rs.b 1
+
+; ----------<Level IDs>----------
+	rsreset
+LVLID_EMERALD		rs.b 1
+
+; ----------<Actors>----------
+ACT_SIZE	equ $40
+ACT_NEXT	equ $40
+ACT_PREV	equ -$40
+SACT_SIZE	equ 6
+SACT_NEXT	equ 6
+SACT_PREV	equ -6
+
+; ----------<Actor IDs>----------
+
+; ----------<Reserved Actor Slots>----------
+	rsset	act_reserved
+ACTSLOT_PLAYER	rs.b ACT_NEXT
+
+; ----------<Sound IDs>----------
+SFXID_FADE		equ $E0
+SFXID_SEGA		equ $E1
+SFXID_SPEEDUP	equ $E2
+SFXID_SLOWDWN	equ $E3
+SFXID_STOP		equ $E4
+
+; ==================================================
+; End of file
+; ==================================================

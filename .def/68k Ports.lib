@@ -1,0 +1,50 @@
+; ==================================================
+; 68k Ports.lib
+; Defines port addresses on the M68000
+; ***DO NOT MODIFY***
+;
+; Author: Kilo
+; 06-10-2024
+; ==================================================
+
+; ----------<RAM>----------
+ram_start	equ $FF0000
+ram_end		equ $1000000
+
+z80_ram		equ $A00000
+z80_end		equ $A20000
+
+sram_start	equ $200001
+sram_end	equ $210000
+; ----------<Z80>----------
+z80_busline	equ $A11100
+z80_resetln	equ $A11200
+; ----------<I/O>----------
+io_ctrl1	equ $A10009
+io_ctrl2	equ $A1000B
+io_ctrlext	equ $A1000D
+io_data1	equ $A10003
+io_data2	equ $A10005
+io_dataext	equ $A10007
+
+io_ver		equ $A10001
+io_tmssstr	equ $A14000
+io_sramwrt	equ $A130F1
+; ----------<Video>----------
+vdp_ctrl	equ $C00004
+vdp_data	equ $C00000
+vdp_hvcnt	equ $C00008
+
+vdp_dbreg	equ $C00018
+vdp_dbwrt	equ $C0001C
+; ----------<Audio>----------
+ym_a0		equ $A04000
+ym_d0		equ $A04001
+ym_a1		equ $A04002
+ym_d1		equ $A04003
+
+psg_ctrl	equ $C00011
+
+; ==================================================
+; End of file
+; ==================================================

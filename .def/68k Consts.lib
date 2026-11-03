@@ -1,0 +1,110 @@
+; ==================================================
+; 68k Consts.lib
+; Defines constants used by the 68k.
+; ***DO NOT MODIFY***
+;
+; Author: Kilo
+; 11-10-2024
+; ==================================================
+
+; ----------<RAM>----------
+RAM_SIZE	equ ram_end-ram_start
+Z80_SIZE	equ z80_end-z80_ram
+SRAM_SIZE	equ sram_end-sram_start
+; ----------<I/O>----------
+IO_UP		equ %00000001
+IO_DOWN		equ %00000010
+IO_LEFT		equ %00000100
+IO_RIGHT	equ %00001000
+IO_B		equ %00010000
+IO_C		equ %00100000
+IO_A		equ %01000000
+IO_START	equ %10000000
+
+IO_UPPOS	equ 0
+IO_DOWNPOS	equ 1
+IO_LEFTPOS	equ 2
+IO_RIGHTPOS	equ 3
+IO_BPOS		equ 4
+IO_CPOS		equ 5
+IO_APOS		equ 6
+IO_STARTPOS	equ 7
+; ----------<Video>----------
+; Video sizes
+VRAM_SIZE	equ $10000
+CRAM_SIZE	equ 64*2
+VSRAM_SIZE	equ 40*2
+
+; Video registers
+VREG_MODE1	equ $8000
+VREG_MODE2	equ $8100
+VREG_PLANEA	equ $8200
+VREG_WINDOW	equ $8300
+VREG_PLANEB	equ $8400
+VREG_SPRITE	equ $8500
+VREG_SPBANK	equ $8600
+VREG_BGCOL	equ $8700
+VREG_HINTRT	equ $8A00
+VREG_MODE3	equ $8B00
+VREG_MODE4	equ $8C00
+VREG_HSCRLL	equ $8D00
+VREG_INC	equ $8F00
+VREG_MAPSZ	equ $9000
+VREG_WINX	equ $9100
+VREG_WINY	equ $9200
+
+; DMA registers
+DMA_LENLO	equ $9300
+DMA_LENHI	equ $9400
+DMA_SRCLO	equ $9500
+DMA_SRCMD	equ $9600
+DMA_SRCHI	equ $9700
+
+; Video commands
+VCMD_VRAMWRT	equ $40000000
+VCMD_VRAMRD		equ $00000000
+VCMD_VRAMDMA	equ $40000080
+VCMD_CRAMWRT	equ $C0000000
+VCMD_CRAMRD		equ $00000020
+VCMD_CRAMDMA	equ C0000080
+VCMD_VSRMWRT	equ $40000010
+VCMD_VSRMRD		equ $00000010
+VCMD_VSRMDMA	equ $40000090
+
+; Video tile/sprite flags
+VFLAG_HFLIP	equ $0800
+VFLAG_VFLIP	equ $1000
+VFLAG_PAL0	equ $0000
+VFLAG_PAL1	equ $2000
+VFLAG_PAL2	equ $4000
+VFLAG_PAL3	equ $6000
+VFLAG_PRI	equ $8000
+
+; Sprite table struct
+SPRT_YPOS	equ 0
+SPRT_SIZE	equ 2
+SPRT_LINK	equ 3
+SPRT_TILE	equ 4
+SPRT_XPOS	equ 6
+
+; Sprite sizes
+SPSZ_1x1	equ %0000
+SPSZ_2x1	equ %0100
+SPSZ_3x1	equ %1000
+SPSZ_4x1	equ %1100
+SPSZ_1x2	equ %0001
+SPSZ_1x3	equ %0010
+SPSZ_1x4	equ %0011
+SPSZ_2x2	equ %0101
+SPSZ_2x3	equ %0110
+SPSZ_2x4	equ %0111
+SPSZ_3x2	equ %1001
+SPSZ_3x3	equ %1010
+SPSZ_3x4	equ %1011
+SPSZ_4x2	equ %1101
+SPSZ_4x3	equ %1110
+SPSZ_4x4	equ %1111
+
+; ==================================================
+; End of file
+; ==================================================
